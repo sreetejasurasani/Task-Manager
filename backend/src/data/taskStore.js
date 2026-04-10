@@ -1,7 +1,7 @@
 const tasks = [
   {
     id: '1',
-    title: 'Learn backend setup',
+    title: 'task 1',
     completed: false,
     createdAt: new Date().toISOString()
   }

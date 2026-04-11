@@ -1,9 +1,12 @@
 # Task Manager Full Stack Assignment
 
-A simple Task Manager app with a React frontend and Express backend.
+A simple full-stack Task Manager app built with a React frontend and an Express backend.
+
+## Live Demo
+- Frontend: https://sreetejasurasani.github.io/Task-Manager/
+- Backend/API: https://task-manager-t6d9.onrender.com
 
 ## Features
-
 - View all tasks
 - Add a task
 - Mark a task as completed
@@ -12,12 +15,15 @@ A simple Task Manager app with a React frontend and Express backend.
 - Loading and error handling
 
 ## Tech Stack
-
 - Frontend: React + Vite
 - Backend: Node.js + Express
 - Storage: In-memory array
 
-## Setup
+## Project Structure
+- `frontend/` - React application
+- `backend/` - Express API
+
+## Setup Instructions
 
 ### Backend
 1. Open the `backend` folder in terminal.
@@ -27,7 +33,7 @@ A simple Task Manager app with a React frontend and Express backend.
    ```
 3. Start the backend:
    ```bash
-   npm.cmd start
+   npm start
    ```
 
 Backend runs on:
@@ -43,7 +49,7 @@ http://localhost:5000
    ```
 3. Start the frontend:
    ```bash
-   npm.cmd run dev
+   npm run dev
    ```
 
 Frontend runs on:
@@ -51,8 +57,16 @@ Frontend runs on:
 http://localhost:5173
 ```
 
-## Assumptions / Trade-offs
+## API Endpoints
+- `GET /tasks` - Fetch all tasks
+- `POST /tasks` - Create a new task
+- `PATCH /tasks/:id` - Mark a task as completed
+- `DELETE /tasks/:id` - Delete a task
 
-- I used in-memory storage because a database was not required for this assignment.
-- The UI is kept simple because functionality and code structure were more important than styling.
-- Only the required core features were implemented first to keep the solution small and clean.
+## Assumptions / Trade-offs
+- In-memory storage was used because a database was not required for this assignment.
+- The UI was kept simple to focus on functionality and clean code structure.
+- Only the core features were implemented to keep the solution small and complete.
+
+## Submission Note
+This solution reflects a normal coding approach for a small feature and focuses on clarity, correctness, and sensible trade-offs.
